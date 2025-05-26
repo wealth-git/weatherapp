@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgba(171, 111, 228, 0.9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form .inputCity {
+    border: none;
+    outline: none;
+    width: 350px;
+    max-width: 350px;
+    min-height: 50px;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 5px;
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.form .inputCity::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.form .getWeather {
+    border: none;
+    outline: none;
+    width: 150px;
+    max-width: 150px;
+    min-height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgb(91, 0, 175);
+    margin-top: 10px;
+}
+
+.form .getWeather:hover {
+    background-color: rgba(126, 0, 245, 0.9);
+}
+.form .getWeather:active {
+    background-color: rgba(126, 0, 245, 0.5);
+}
+
+.weather {
+    margin-top: 50px;
+    width: 400px;
+    /* max-width: 400px; */
+    background-color: rgba(169, 78, 255, 0.5);
+    box-shadow: 0px 0px 8px black;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cityName {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.weatherEmoji {
+    font-size: 7rem;
+}
+.tempName {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.humidityName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.descName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.scroll-weather {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    max-width: 370px;
+    /* scrollbar-width: none;
+    -ms-overflow-style: none; */
+}
+
+.scroll-weather::-webkit-scrollbar {
+    display: none;
+}
+
+.errorMessage {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
